@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Corpo da página */
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background: radial-gradient(circle, #e3f2fd 15%, #42a5f5 60%, #1e88e5 100%);
+    padding: 20px;
+}
+
+/* Caixa principal do formulário */
+.caixa-contato {
+    background-color: #f8f9fa;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 20px;
+    color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.caixa-contato h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+.caixa-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+/* Rótulos */
+.caixa-contato form label {
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.caixa-contato form input,
+.caixa-contato form textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #343a40;
+    width: 100%;
+}
+
+.caixa-contato form input:focus,
+.caixa-contato form textarea:focus {
+    border: 2px solid #80bdff;
+}
+
+/* Placeholder */
+::placeholder {
+    color: #adb5bd;
+    font-size: 1.2rem;
+}
+
+/* Mensagem de erro */
+.erro {
+    font-size: 0.9rem;
+    color: #dc3545;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+/* Textarea */
+#mensagem {
+    height: 100px;
+    resize: none;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Botão de enviar */
+#btn-enviar {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste visual do formulário */
+.caixa-contato form input,
+.caixa-contato form textarea {
+    margin-bottom: 10px;
+}
